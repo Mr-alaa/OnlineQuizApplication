@@ -107,10 +107,5 @@ namespace OnLineQuizApplication.Controllers
 
             return View();
         }
-
-
-
-
-
     }
 }

@@ -24,11 +24,16 @@ namespace OnLineQuizApplication.Controllers
 
         public ActionResult DeleteUserQuiz(int id)
         {
+
             QuizContext db = new QuizContext();
-            List<Quiz> p = (from c in db.Quizzes
-                            where c.Id == id
-                            select c).ToList();
+            //List<Question> listq = new QuizHandler().GetAllQuestion(id);
+            Quiz p = (from c in db.Quizzes
+                      where c.Id == id
+                      select c).FirstOrDefault();
+            //b.Entry(p.)
+            //  db.Questions.RemoveRange(listq);
             db.Entry(p).State = EntityState.Deleted;
+
             db.SaveChanges();
             return Json("Delete", JsonRequestBehavior.AllowGet);
         }

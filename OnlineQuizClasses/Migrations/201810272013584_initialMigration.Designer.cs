@@ -7,13 +7,13 @@ namespace OnlineQuizClasses.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class DeleteTotaltake : IMigrationMetadata
+    public sealed partial class initialMigration : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(DeleteTotaltake));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(initialMigration));
         
         string IMigrationMetadata.Id
         {
-            get { return "201807111341120_DeleteTotaltake"; }
+            get { return "201810272013584_initialMigration"; }
         }
         
         string IMigrationMetadata.Source

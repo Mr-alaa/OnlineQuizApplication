@@ -10,7 +10,6 @@ namespace OnlineQuizClasses.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "OnlineQuizClasses.QuizContext";
         }
 
         protected override void Seed(OnlineQuizClasses.QuizContext context)

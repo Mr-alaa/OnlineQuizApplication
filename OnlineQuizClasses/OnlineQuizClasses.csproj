@@ -47,41 +47,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201807051946371_InitialCreate.cs" />
-    <Compile Include="Migrations\201807051946371_InitialCreate.Designer.cs">
-      <DependentUpon>201807051946371_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201807061328066_TotalTime.cs" />
-    <Compile Include="Migrations\201807061328066_TotalTime.Designer.cs">
-      <DependentUpon>201807061328066_TotalTime.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201807061336081_NewPropertyTime.cs" />
-    <Compile Include="Migrations\201807061336081_NewPropertyTime.Designer.cs">
-      <DependentUpon>201807061336081_NewPropertyTime.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201807061544251_Some.cs" />
-    <Compile Include="Migrations\201807061544251_Some.Designer.cs">
-      <DependentUpon>201807061544251_Some.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201807111341120_DeleteTotaltake.cs" />
-    <Compile Include="Migrations\201807111341120_DeleteTotaltake.Designer.cs">
-      <DependentUpon>201807111341120_DeleteTotaltake.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809160507257_UserManagementTbl.cs" />
-    <Compile Include="Migrations\201809160507257_UserManagementTbl.Designer.cs">
-      <DependentUpon>201809160507257_UserManagementTbl.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809181353161_UpdateQuizLogic.cs" />
-    <Compile Include="Migrations\201809181353161_UpdateQuizLogic.Designer.cs">
-      <DependentUpon>201809181353161_UpdateQuizLogic.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809200823273_UserGender.cs" />
-    <Compile Include="Migrations\201809200823273_UserGender.Designer.cs">
-      <DependentUpon>201809200823273_UserGender.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201809261908116_associateuserQuiz.cs" />
-    <Compile Include="Migrations\201809261908116_associateuserQuiz.Designer.cs">
-      <DependentUpon>201809261908116_associateuserQuiz.cs</DependentUpon>
+    <Compile Include="Migrations\201810272013584_initialMigration.cs" />
+    <Compile Include="Migrations\201810272013584_initialMigration.Designer.cs">
+      <DependentUpon>201810272013584_initialMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -98,34 +66,9 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201807051946371_InitialCreate.resx">
-      <DependentUpon>201807051946371_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201807061328066_TotalTime.resx">
-      <DependentUpon>201807061328066_TotalTime.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201807061336081_NewPropertyTime.resx">
-      <DependentUpon>201807061336081_NewPropertyTime.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201807061544251_Some.resx">
-      <DependentUpon>201807061544251_Some.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201807111341120_DeleteTotaltake.resx">
-      <DependentUpon>201807111341120_DeleteTotaltake.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809160507257_UserManagementTbl.resx">
-      <DependentUpon>201809160507257_UserManagementTbl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809181353161_UpdateQuizLogic.resx">
-      <DependentUpon>201809181353161_UpdateQuizLogic.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809200823273_UserGender.resx">
-      <DependentUpon>201809200823273_UserGender.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201809261908116_associateuserQuiz.resx">
-      <DependentUpon>201809261908116_associateuserQuiz.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201810272013584_initialMigration.resx">
+      <DependentUpon>201810272013584_initialMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

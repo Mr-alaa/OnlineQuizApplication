@@ -21,7 +21,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark deep-purple">
-        <a class="navbar-brand" href="#">Quiz-Application</a>
+        <a class="navbar-brand" href="@Url.Action("Index","Admin")">Quiz-Application</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
                 aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -32,10 +32,7 @@
                     <a class="nav-link" href="@Url.Action("Index","Quiz")"><i class="fa fa-graduation-cap fa-lg"></i>Admin Panel <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="@Url.Action("QuizInfo","Quiz")"><i class="fa fa-plus fa-lg"></i>&nbsp;Add Quiz</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="@Url.Action("Index","Quiz")"><i></i>All Quizes</a>
+                    <a class="nav-link" href="@Url.Action("AllQuizes","Admin")"><i></i><span class="fa fa-list"></span>&nbsp; All Quizes</a>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
@@ -60,7 +57,6 @@
         </div>
     </nav>
     <div class="row">
-
         <div class="col-lg-3">
         </div>
         <div class="col-lg-9">

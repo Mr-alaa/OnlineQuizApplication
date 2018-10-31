@@ -26,12 +26,9 @@ namespace OnLineQuizApplication.Controllers
         {
 
             QuizContext db = new QuizContext();
-            //List<Question> listq = new QuizHandler().GetAllQuestion(id);
             Quiz p = (from c in db.Quizzes
                       where c.Id == id
                       select c).FirstOrDefault();
-            //b.Entry(p.)
-            //  db.Questions.RemoveRange(listq);
             db.Entry(p).State = EntityState.Deleted;
 
             db.SaveChanges();

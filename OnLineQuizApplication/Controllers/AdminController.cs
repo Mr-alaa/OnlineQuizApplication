@@ -31,11 +31,11 @@ namespace OnLineQuizApplication.Controllers
         public ActionResult DeleteQuiz(int id)
         {
             QuizContext db = new QuizContext();
-            List<Quiz> p = (from c in db.Quizzes
-                            where c.Id == id
-                            select c).ToList();
-            db.Entry(User).State = EntityState.Unchanged;
+            Quiz p = (from c in db.Quizzes
+                      where c.Id == id
+                      select c).FirstOrDefault();
             db.Entry(p).State = EntityState.Deleted;
+
             db.SaveChanges();
             return Json("Delete", JsonRequestBehavior.AllowGet);
         }

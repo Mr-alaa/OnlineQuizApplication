@@ -91,7 +91,7 @@ namespace OnLineQuizApplication.Controllers
             }
 
             ViewBag.qCount = questionsCount - 1;
-            return RedirectToAction("AddQuestions", new { questionsCount = (int)ViewBag.qCount, name = quiz.QuizTitle });
+            return RedirectToAction("Index", new { questionsCount = (int)ViewBag.qCount, name = quiz.QuizTitle });
 
         }
 
